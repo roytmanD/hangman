@@ -1,0 +1,195 @@
+.App{
+text-align: center;
+padding: 5%;
+position: static;
+}
+
+body{
+  background-color: rgba(29, 26, 110, 0.78);
+}
+.letters-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 2.5em;
+  width: 90%;
+  left:5%;
+  right: 5%;
+}
+
+.letter-container-unlocked-false{
+  height: 2em;
+   min-width: 1.5em;
+  background-color: lightgrey;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+    padding-top: 0.5em;
+    font-size: 18pt;
+}
+
+.letter-container-unlocked-true{
+  height: 2em;
+   min-width: 1.5em;
+  border-radius: 5px;
+  background-color: grey;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5em;
+  font-size: 18pt;
+  color:white;
+}
+
+.space-dash-container{
+  height: 2em;
+   min-width: 1.5em;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5em;
+  font-size: 18pt;
+  color: grey;
+}
+
+.hangman-container{
+  width: 90%;
+  height: 80%;
+  background-color: white;
+  position: absolute;
+  border-radius: 3px;
+}
+
+.hangman-part-img{
+  max-height: 7em;
+  max-width: 7em;
+  position: absolute;
+}
+
+#bar0{
+  left:0;
+  top: 3em;
+  max-width: 13em;
+  height: 5em;
+}
+#head1{
+  left: 8.5em;
+  top: 5.9em;
+  z-index: 2;
+}
+
+#neck2{
+  z-index: 1;
+  max-width: 3em;
+  max-height: 3em;
+  left: 10.5em;
+  top: 12.2em;
+}
+
+#corpus3{
+  z-index: 2;
+  left: 9.3em;
+  top: 13.6em;
+}
+#right-arm4{
+  z-index: 2;
+  left: 11.8em;
+  top: 13.6em;
+  max-width: 6em;
+  max-height: 6em;
+}
+#left-arm5{
+  z-index: 2;
+  left: 5.2em;
+  top: 13.6em;
+  max-width: 6em;
+  max-height: 6em;
+}
+#left-hand6{
+  z-index: 1;
+  left: 16.4em;
+  top: 17.9em;
+  max-width: 1.6em;
+  max-height: 1.6em;
+}
+
+#left-hand7{
+  z-index: 1;
+  left: 5em;
+  top: 17.9em;
+  max-width: 1.6em;
+  max-height: 1.6em;
+}
+
+#left-leg8{
+transform: scaleX(-1);
+z-index: 2;
+left: 11.7em;
+top: 19.2em;
+}
+#left-leg9{
+  z-index: 2;
+  left: 8.1em;
+  top: 19.2em;
+}
+#left-foot10{
+  z-index: 1;
+  left: 12.9em;
+  top: 25.3em;
+  max-width: 3.5em;
+  max-height: 3.5em;
+  transform: scaleX(-1);
+}
+#left-foot11{
+  z-index: 1;
+  left: 6.5em;
+  top: 25.3em;
+  max-width: 3.5em;
+  max-height: 3.5em;
+}
+p.missed-title{
+  margin-bottom: 0;
+  color: grey;
+  font-weight: bold;
+}
+h1.unguessed-letters{
+  margin-top:0;
+  color: blue;
+  font-size: 40pt;
+}
+
+div.unguessed-container{
+  position: absolute;
+  right: 5em;
+}
+
+.game-over-container{
+  position: absolute;
+  width: 20%;
+  top: 30%;
+  left: 40%;
+  right: 45%;
+  z-index: 5;
+}
+.game-over-title{
+  color: white;
+  width: 100%;
+
+}
+.body-shadow{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 26, 110, 0.35);
+  z-index: 3;
+}
+.restart-btn{
+  border: 2px dashed yellow;
+  border-radius: 25px;
+  color: yellow;
+  width: 9.5em;
+  font-size: 12pt;
+  background: none;
+}
